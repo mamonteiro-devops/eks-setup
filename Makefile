@@ -17,3 +17,5 @@ install-argo-apps:
 
 delete-cluster:
 	kind delete cluster --name local-kafka-kubernetes
+
+#

@@ -17,7 +17,7 @@ delete-cluster:
 
 create-prod-cluster: clean-terraform-files
 	terraform -chdir=./setup init
-	terraform -chdir=./setup apply
+	terraform -chdir=./setup apply -auto-approve
 
 clean-terraform-files:
 	rm -rf ./setup/.terraform ./setup/.terraform.tfstate.lock.info ./setup/terraform.tfstate

@@ -16,6 +16,7 @@ delete-cluster:
 	kind delete cluster --name local-kafka-kubernetes
 
 create-prod-cluster: clean-terraform-files
+	#terraform -chdir=./setup init -backend-config environments/demo/backend.config
 	terraform -chdir=./setup init
 	terraform -chdir=./setup apply -auto-approve
 

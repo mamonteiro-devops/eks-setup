@@ -1,3 +1,8 @@
+export AWS_ACCESS_KEY_ID=AKIAWTQU42FZTLJVERFG
+export AWS_SECRET_ACCESS_KEY=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
+export AWS_REGION=us-east-1
+
+
 # terraform-test
 aws eks --region us-east-1 update-kubeconfig --name eks-kafka-cluster
 
